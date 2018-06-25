@@ -81,7 +81,6 @@
     ]
   },
   "main": "lib/index.js",
-  "browser": "dist/parse-err.js",
   "unpkg": "dist/parse-err.min.js",
   "files": [
     "lib",
