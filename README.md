@@ -68,7 +68,11 @@ console.error(parseErr(err));
 ```
 
 ```sh
-
+{ name: 'BeepBoop',
+  message: 'Oops!',
+  stack: 'BeepBoop: Oops!\n    at Object.<anonymous> (/Users/user/Projects/parse-err/test.js:3:13)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)\n    at Function.Module.runMain (module.js:693:10)\n    at startup (bootstrap_node.js:188:16)\n    at bootstrap_node.js:609:3',
+  code: 100,
+  statusCode: 200 }
 ```
 
 ### VanillaJS
@@ -98,7 +102,7 @@ console.error(parseErr(err));
 [MIT](LICENSE) © [Nick Baugh](http://niftylettuce.com/)
 
 
-## 
+##
 
 [npm]: https://www.npmjs.com/
 
