@@ -11,35 +11,35 @@
     "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)"
   ],
   "dependencies": {
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.11"
   },
   "ava": {
     "failFast": true,
     "verbose": true
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.51",
-    "@babel/core": "^7.0.0-beta.51",
-    "@babel/preset-env": "^7.0.0-beta.51",
-    "ava": "^0.22.0",
-    "babelify": "^9.0.0",
-    "browserify": "^16.2.2",
-    "caniuse-lite": "^1.0.30000858",
-    "codecov": "^2.3.0",
-    "cross-env": "^5.0.5",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-compat": "^2.4.0",
-    "eslint-plugin-prettier": "^2.6.1",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.0.4",
-    "nyc": "^11.1.0",
-    "prettier": "^1.6.1",
-    "remark-cli": "^4.0.0",
-    "remark-preset-github": "^0.0.6",
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "ava": "^0.25.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "caniuse-lite": "^1.0.30000888",
+    "codecov": "^3.1.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-compat": "^2.5.1",
+    "eslint-plugin-prettier": "^2.7.0",
+    "husky": "^1.0.1",
+    "lint-staged": "^7.3.0",
+    "nyc": "^13.0.1",
+    "prettier": "^1.14.3",
+    "remark-cli": "^5.0.0",
+    "remark-preset-github": "^0.0.8",
     "rimraf": "^2.6.2",
     "tinyify": "^2.4.3",
-    "xo": "^0.21.1"
+    "xo": "^0.23.0"
   },
   "engines": {
     "node": ">=6.4"
@@ -82,6 +82,7 @@
   },
   "main": "lib/index.js",
   "unpkg": "dist/parse-err.min.js",
+  "jsdelivr": "dist/parse-err.min.js",
   "files": [
     "lib",
     "dist"
