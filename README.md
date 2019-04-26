@@ -1,11 +1,11 @@
 # parse-err
 
-[![build status](https://img.shields.io/travis/niftylettuce/parse-err.svg)](https://travis-ci.org/niftylettuce/parse-err)
-[![code coverage](https://img.shields.io/codecov/c/github/niftylettuce/parse-err.svg)](https://codecov.io/gh/niftylettuce/parse-err)
+[![build status](https://img.shields.io/travis/cabinjs/parse-err.svg)](https://travis-ci.org/cabinjs/parse-err)
+[![code coverage](https://img.shields.io/codecov/c/github/cabinjs/parse-err.svg)](https://codecov.io/gh/cabinjs/parse-err)
 [![code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![made with lass](https://img.shields.io/badge/made_with-lass-95CC28.svg)](https://lass.js.org)
-[![license](https://img.shields.io/github/license/niftylettuce/parse-err.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/cabinjs/parse-err.svg)](LICENSE)
 
 > Parse errors to provide a consistent metadata object across Browser and Node environments. Made for [Cabin][].
 
