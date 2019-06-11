@@ -5,7 +5,10 @@
   "author": "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)",
   "ava": {
     "failFast": true,
-    "verbose": true
+    "verbose": true,
+    "helpers": [
+      "test/helpers/**/*"
+    ]
   },
   "bugs": {
     "url": "https://github.com/niftylettuce/parse-err/issues",
@@ -20,31 +23,31 @@
     "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)"
   ],
   "dependencies": {
-    "lodash": "^4.17.11"
+    "iserror": "^0.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "@commitlint/cli": "^7.5.2",
-    "@commitlint/config-conventional": "^7.5.0",
-    "ava": "^1.4.1",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "ava": "^2.1.0",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
-    "codecov": "^3.3.0",
+    "codecov": "^3.5.0",
     "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
     "eslint-config-xo-lass": "^1.0.3",
     "eslint-plugin-compat": "^3.1.1",
-    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-node": "^9.1.0",
     "fixpack": "^2.3.1",
-    "husky": "^2.1.0",
-    "lint-staged": "^8.1.5",
-    "nyc": "^14.0.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
+    "nyc": "^14.1.1",
     "remark-cli": "^6.0.1",
     "remark-preset-github": "^0.0.13",
     "rimraf": "^2.6.3",
-    "tinyify": "^2.5.0",
+    "tinyify": "^2.5.1",
     "xo": "^0.24.0"
   },
   "engines": {
@@ -120,14 +123,14 @@
   },
   "scripts": {
     "ava": "cross-env NODE_ENV=test ava",
-    "browserify": "browserify src/index.js -o dist/parse-err.js -s parseErr -d -t [ babelify --configFile ./.dist.babelrc ]",
+    "browserify": "browserify src/index.js -o dist/parse-err.js -s parseErr -g [ babelify --configFile ./.dist.babelrc ]",
     "build": "npm run build:clean && npm run build:lib && npm run build:dist",
     "build:clean": "rimraf lib dist",
     "build:dist": "npm run browserify && npm run minify",
     "build:lib": "babel --config-file ./.lib.babelrc src --out-dir lib",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "lint": "xo && remark . -qfo && eslint -c .lib.eslintrc lib && eslint -c .dist.eslintrc dist",
-    "minify": "cross-env NODE_ENV=production browserify src/index.js -o dist/parse-err.min.js -s parseErr -d -t [ babelify --configFile ./.dist.babelrc ] -p tinyify",
+    "minify": "cross-env NODE_ENV=production browserify src/index.js -o dist/parse-err.min.js -s parseErr -g [ babelify --configFile ./.dist.babelrc ] -p tinyify",
     "nyc": "cross-env NODE_ENV=test nyc ava",
     "test": "npm run build && npm run lint && npm run ava",
     "test-coverage": "npm run build && npm run lint && npm run nyc"
