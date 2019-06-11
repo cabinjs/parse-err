@@ -4,14 +4,12 @@
     "node": false,
     "browser": true,
     "amd": true,
-    "es6": true
+    "es6": true,
+    "commonjs": true
   },
   "plugins": ["compat"],
   "rules": {
     "compat/compat": "error",
-    "no-cond-assign": "off",
-    "no-empty": "off",
-    "no-undef": "off",
     "no-unused-vars": "off"
   }
 }
