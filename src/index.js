@@ -17,7 +17,7 @@ const parseErr = (err, fields = []) => {
   if (!keys.name && err.constructor.name) keys.name = err.constructor.name;
 
   return Array.isArray(fields) && fields.length !== 0
-    ? keys.filter(key => fields.indexOf(key) !== -1)
+    ? keys.filter(key => fields.includes(key))
     : keys;
 };
 
