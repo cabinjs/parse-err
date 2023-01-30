@@ -1,6 +1,9 @@
 {
   "extends": ["eslint:recommended", "plugin:node/recommended"],
-  "env": { "browser": true" },
-  "plugins": ["compat"],
-  "rules": { "compat/compat": "error" }
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-unsafe-finally": "off"
+  }
 }
